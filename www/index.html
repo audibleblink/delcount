@@ -6,36 +6,40 @@
     <link href="main.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <header class="nav">
-      <h1 class="h1 center">
-        The Real Delegate Count
-      </h1>
+    <header class="container-fluid">
+      <div class="large m-t-2 m-b-2 text-md-center dinlight">
+        Actual Delegate Count
+      </div>
     </header>
-    <div class="container">
-      <div class="results col-md-12">
-        <div class="bernie col-md-6">
-          <div class="bernie_name h2">
+    <div class="container-fluid banner m-3">
+      <div class="results col-md-12 m-t-3 m-b-3">
+        <div class="col-md-1"></div>
+        <div class="bernie col-md-5 m-t-2">
+          <div class="bernie_name dinbold large text-md-center">
             Bernie Sanders
           </div>
-          <div class="count" data-sanders="" id="bernie_count"></div>
+          <div class="count dinlight xlarge text-md-center blue" id="bernie_count"></div>
         </div>
-        <div class="hilary col-md-6">
-          <div class="hilary_name h2">
-            Hilary Clinton
+        <div class="hilary col-md-5 m-t-2">
+          <div class="hilary_name dinbold large text-md-center">
+            Hillary Clinton
           </div>
-          <div class="count" data-clinton="" id="hilary_count"></div>
+          <div class="count dinlight xlarge text-md-center blue" id="hilary_count"></div>
         </div>
+        <div class="col-md-1"></div>
       </div>
     </div>
-    <footer>
-      <li>
-        Some Caucuses report over the course of several weeks. More Info on <a href="http://www.wa-democrats.org/sites/wadems/files/documents/2016%20Caucus%20and%20Convention%20Press%20Guide%20-%20150915.pdf">caucuses here</a>
-      </li>
-      <li>
-        More detailed Primary data can be <a href="">found here</a>
-      </li>
+    <footer class="container-fluid">
+      <ul class="list-group m-t-2">
+        <li class="list-group-item">
+          Some Caucuses report over the course of several weeks. More Info on <a href="http://www.wa-democrats.org/sites/wadems/files/documents/2016%20Caucus%20and%20Convention%20Press%20Guide%20-%20150915.pdf">caucuses here</a>
+        </li>
+        <li class="list-group-item">
+          More detailed Primary data can be <a href="http://www.countthebern.com">found here</a>
+        </li>
+      </ul>
     </footer>
-    <sciprt src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" type="text/javascript"></sciprt>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="main.js" type="text/javascript"></script>
   </body>
 </html>

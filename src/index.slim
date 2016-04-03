@@ -7,28 +7,36 @@ html
     link rel="stylesheet" type="text/css" href='main.css'
 
   body
+    header.container-fluid
+      .large.m-t-2.m-b-2.text-md-center.dinlight Actual Delegate Count
 
-    header.nav 
-      h1.h1.center The Real Delegate Count
+    .container-fluid.banner.m-3
+      .results.col-md-12.m-t-3.m-b-3
+        
+        .col-md-1
+        
+        .bernie.col-md-5.m-t-2
+          .bernie_name.dinbold.large.text-md-center Bernie Sanders
+          #bernie_count.count.dinlight.xlarge.text-md-center.blue
+        
+        
+        .hilary.col-md-5.m-t-2
+          .hilary_name.dinbold.large.text-md-center Hillary Clinton
+          #hilary_count.count.dinlight.xlarge.text-md-center.blue
+          
+        .col-md-1
 
-    .container
-      .results.col-md-12
-        .bernie.col-md-6
-          .bernie_name.h2 Bernie Sanders
-          #bernie_count.count data-sanders=''
-        .hilary.col-md-6
-          .hilary_name.h2 Hilary Clinton
-          #hilary_count.count data-clinton=''
-
-    footer
-      li
-        | Some Caucuses report over the course of several weeks. More Info on 
-        a[href="http://www.wa-democrats.org/sites/wadems/files/documents/2016%20Caucus%20and%20Convention%20Press%20Guide%20-%20150915.pdf"] caucuses here
-      li
-        | More detailed Primary data can be 
-        a[href=""] found here
+      
+    footer.container-fluid
+      ul.list-group.m-t-2
+        li.list-group-item
+          | Some Caucuses report over the course of several weeks. More Info on 
+          a[href="http://www.wa-democrats.org/sites/wadems/files/documents/2016%20Caucus%20and%20Convention%20Press%20Guide%20-%20150915.pdf"] caucuses here
+        li.list-group-item
+          | More detailed Primary data can be 
+          a[href="http://www.countthebern.com"] found here
 
 
 
-    sciprt type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js'
+    script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js'
     script type='text/javascript' src='main.js'

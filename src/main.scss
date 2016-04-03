@@ -1,0 +1,39 @@
+@font-face {
+    font-family: dinlight;
+    src: url(dinlight.otf);
+}
+
+@font-face {
+    font-family: dinbold;
+    src: url(dinbold.otf);
+}
+
+body {
+  background-image: url('bg.png');
+}
+
+.banner {
+  color: white;
+  background-color: #333
+}
+
+.dinbold {
+  font-family: dinbold
+}
+
+.dinlight {
+  font-family: dinlight
+}
+
+.large {
+  font-size: 3em
+}
+
+.xlarge {
+  font-size: 8em
+}
+
+
+.blue {
+  color: #2196F3
+}
