@@ -1,4 +1,5 @@
 var parseCount = function(body) {
+  var stats = {timestamp: new Date(body.delState.timestamp).toString() }
   return body.delSuper.del
     .reduce(function(memo, party) {
       memo[party.pId] = party.State
@@ -7,12 +8,13 @@ var parseCount = function(body) {
       return memo
     }, {}).Dem
     .filter(function(cand) { return cand.name === 'Sanders' || cand.name == 'Clinton' })
-    .reduce(function(memo, cand) { memo[cand.name] = cand.total; return memo }, {})
+    .reduce(function(memo, cand) { memo[cand.name] = cand.total; return memo }, stats)
 }
 
 var writeBody = function(object) {
   document.getElementById('bernie_count').innerHTML = object.Sanders
   document.getElementById('hilary_count').innerHTML = object.Clinton
+  document.getElementById('timestamp'   ).innerHTML = object.timestamp
 }
 
 // XHR //

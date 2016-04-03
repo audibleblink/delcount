@@ -3,6 +3,7 @@ doctype html
 html
   head
     title The Real Delegate Count
+    link rel="stylesheet" type="text/css" href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'
     link rel="stylesheet" type="text/css" href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css'
     link rel="stylesheet" type="text/css" href='main.css'
 
@@ -18,13 +19,16 @@ html
         .bernie.col-md-5.m-t-2
           .bernie_name.dinbold.large.text-md-center Bernie Sanders
           #bernie_count.count.dinlight.xlarge.text-md-center.blue
+            i.fa.fa-spinner.fa-spin
         
         
         .hilary.col-md-5.m-t-2
           .hilary_name.dinbold.large.text-md-center Hillary Clinton
           #hilary_count.count.dinlight.xlarge.text-md-center.blue
-          
+            i.fa.fa-spinner.fa-spin
+
         .col-md-1
+      #timestamp.pull-md-right.dinlight Updating. . . .
 
       
     footer.container-fluid
@@ -38,5 +42,4 @@ html
 
 
 
-    script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js'
     script type='text/javascript' src='main.js'
