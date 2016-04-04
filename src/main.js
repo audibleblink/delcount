@@ -18,7 +18,7 @@ var writeBody = function(object) {
 }
 
 // XHR //
-var url = 'http://vps.audibleblink.com:3000/reports'
+var url = 'http://vps.audibleblink.com/reports'
 var xmlhttp = new XMLHttpRequest()
 
 xmlhttp.onreadystatechange = function() {
