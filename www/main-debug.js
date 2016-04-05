@@ -14,7 +14,7 @@ var parseCount = function(body) {
 var writeBody = function(object) {
   document.getElementById('bernie_count').innerHTML = object.Sanders
   document.getElementById('hilary_count').innerHTML = object.Clinton
-  document.getElementById('timestamp'   ).innerHTML = object.timestamp
+  document.getElementById('timestamp'   ).innerHTML = '*AP reports as of: ' + object.timestamp
 }
 
 // XHR //
