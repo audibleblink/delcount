@@ -18,7 +18,7 @@ var writeBody = function(object) {
 }
 
 // XHR //
-var url = 'http://vps.audibleblink.com/reports'
+var url = 'http://vps.audibleblink.com/delegates/reports.json'
 var xmlhttp = new XMLHttpRequest()
 
 xmlhttp.onreadystatechange = function() {
@@ -29,5 +29,4 @@ xmlhttp.onreadystatechange = function() {
 }
 
 xmlhttp.open('GET', url)
-xmlhttp.setRequestHeader('accept', 'application/json')
 xmlhttp.send()
